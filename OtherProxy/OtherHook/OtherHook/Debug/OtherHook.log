@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+dllmain.obj : error LNK2019: unresolved external symbol _MH_CreateHook@12 referenced in function "unsigned int __stdcall vroomVroom(struct HINSTANCE__ *)" (?vroomVroom@@YGIPAUHINSTANCE__@@@Z)
+dllmain.obj : error LNK2019: unresolved external symbol _MH_EnableHook@4 referenced in function "unsigned int __stdcall vroomVroom(struct HINSTANCE__ *)" (?vroomVroom@@YGIPAUHINSTANCE__@@@Z)
+C:\Users\Carter\Desktop\minhook\bin\libMinHook-x64-v141-mtd.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Carter\source\repos\OtherHook\Debug\OtherHook.dll : fatal error LNK1120: 2 unresolved externals
