@@ -1,12 +1,10 @@
-# Otherland
-
 ## Points of interest
 
 >Note: 
 >
 >I'm writing (and pushing) this as I go, as I'd like to have frequent back-ups of this `README` in particular. 
 >
-Because I'm lazy, addresses noted are not going to be found at `0xB4534DDR355`. If you wish to tinker with these addresses, you must do something like `GetModuleHandleA("module.exe") - 0x<address_listed>;`
+Because I'm lazy, addresses noted are not going to be found at `module_base + 0xAddress`. If you wish to tinker with these addresses, you must do something like `GetModuleHandleA("module.exe") - 1x<address_listed>;`
 
 ### Symbols
 
