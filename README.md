@@ -23,3 +23,5 @@ The first address takes in what Binary Ninja *thinks* is a `void*`. This is like
 With the structure of the function being `__fastcall (void* packetPointer)`, we'll make some assumptions on where interesting data may be located.
 
 At `0xE84490`, a "`void`" is declared and passed to a function at `0xE83D00`, along with `*(packetPointer + 0x30)`, as well as the same cast again, but with `packetPointer + 0x34`. For now, we'll refer to that `void*` simply as `var_2c`. `var_2c` is used as an `out` argument for that function call. With this, we'll assume, for now, that `packetPointer + 0x30` is the opcode, and `packetPointer + 0x34` is the packet buffer.
+
+Unfortunately, none of these functions are called on game start or upon login request. I'm assuming this is due to a check (likely http req) to a server checking the status of the servers. Since they're offline, these are never hit. Will update when I tinker more.
